@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Радриго — Биография</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ФОН (bg.jpg обязательно как фон сайта) -->
+  <div class="bg"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="topbar" data-animate>
+    <div class="logo">
+      <span class="dot"></span>
+      <span>Rodrigo / Bio</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#facts">Факты</a>
+      <a href="#timeline">Путь</a>
+      <a href="#interests">Интересы</a>
+      <a href="#speech">Речь</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#goal">Цель</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="btn" id="openModalBtn">Главное фото</button>
+      <button class="btn ghost" id="themeBtn" title="Сменить тему">Тема</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left" data-animate>
+        <div class="badge">
+          <img src="img/car.jpg" alt="Радриго" class="badge-avatar">
+          <div>
+            <div class="badge-title">Радриго</div>
+            <div class="badge-sub">16 лет • Екибастуз</div>
+          </div>
+        </div>
+
+        <h1 class="title">
+          Радриго, <span class="accent">16 лет</span><br/>
+          город <span class="accent">Екибастуз</span>
+        </h1>
+
+        <p class="subtitle">
+          Родился в Павлодаре. Интересуется атомными реакторами и Roblox-брейнротами.
+          Умеет говорить как дипломат — и иногда резко переключаться на «уличный вайб».
+          Силен в основах права и умеет говорить убедительно.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#about">Узнать больше</a>
+          <a class="btn" href="#gallery">Смотреть фото</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">16</div>
+            <div class="stat-text">Возраст</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Екибастуз</div>
+            <div class="stat-text">Город</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Павлодар</div>
+            <div class="stat-text">Рождение</div>
+          </div>
+        </div>
+
+        <div class="quote-line">
+          <span class="q">«жалко… жалко у пчёлки в попке»</span>
+          <span class="q-sub">— принцип, которого придерживается</span>
+        </div>
+      </div>
+
+      <div class="hero-right" data-animate>
+        <div class="stack">
+          <div class="card big">
+            <img src="img/car.jpg" alt="Главное фото Радриго">
+            <div class="card-caption">Главная фотография Радриго</div>
+          </div>
+
+          <div class="mini-row">
+            <div class="card mini">
+              <img src="img/night.jpg" alt="Ночное фото">
+              <div class="card-caption">Настроение</div>
+            </div>
+            <div class="card mini">
+              <img src="img/roblox.jpg" alt="Roblox">
+              <div class="card-caption">Roblox / брейнроты</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head" data-animate>
+        <h2>О Радриго</h2>
+        <p>Кто он и чем отличается от других.</p>
+      </div>
+
+      <div class="grid3">
+        <article class="info" data-animate>
+          <div class="info-top">
+            <img src="img/car.jpg" class="icon" alt="Радриго">
+            <h3>Личность</h3>
+          </div>
+          <p>
+            Уверенный, умный, с харизмой. Может быть спокойным и дипломатичным,
+            но иногда включает «жёсткий вайб» в речи.
+          </p>
+        </article>
+
+        <article class="info" data-animate>
+          <div class="info-top">
+            <img src="img/night.jpg" class="icon" alt="Родритино Пердитино">
+            <h3>Характер</h3>
+          </div>
+          <p>
+            Настойчивый и прямолинейный. Любит, когда всё по фактам и без лишних слов.
+          </p>
+        </article>
+
+        <article class="info" data-animate>
+          <div class="info-top">
+            <img src="img/roblox.jpg" class="icon" alt="Roblox">
+            <h3>Юмор</h3>
+          </div>
+          <p>
+            Любит мемный стиль и «брейнроты» из Roblox — иногда это лучше любой мотивации.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FACTS -->
+    <section class="section" id="facts">
+      <div class="section-head" data-animate>
+        <h2>Факты</h2>
+        <p>Коротко и понятно.</p>
+      </div>
+
+      <div class="wide">
+        <div class="wide-left" data-animate>
+          <h3>О нём:</h3>
+          <ul class="facts">
+            <li><b>Имя:</b> Радриго</li>
+            <li><b>Возраст:</b> 16 лет</li>
+            <li><b>Город:</b> Екибастуз</li>
+            <li><b>Родился:</b> Павлодар</li>
+            <li><b>Интересы:</b> атомные реакторы, Roblox-брейнроты</li>
+            <li><b>Сильная сторона:</b> основы права</li>
+            <li><b>Старт:</b> с самых низов (по его истории)</li>
+            <li><b>Сейчас:</b> “ещё ниже” (иронично, но с характером)</li>
+          </ul>
+        </div>
+
+        <div class="wide-right" data-animate>
+          <img src="img/car.jpg" alt="Радриго" class="poster">
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="section-head" data-animate>
+        <h2>Путь Радриго</h2>
+        <p>Небольшая история в стиле таймлайна.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item" data-animate>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-head">
+              <img src="img/car.jpg" class="t-img" alt="">
+              <div>
+                <div class="t-title">Рождение</div>
+                <div class="t-sub">Павлодар</div>
+              </div>
+            </div>
+            <p>Родился в Павлодаре, дальше — движение к своей цели.</p>
+          </div>
+        </div>
+
+        <div class="t-item" data-animate>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-head">
+              <img src="img/night.jpg" class="t-img" alt="">
+              <div>
+                <div class="t-title">Низы</div>
+                <div class="t-sub">Начинал с малого</div>
+              </div>
+            </div>
+            <p>Стартовал “с самых низов” — без идеальных условий, но с характером.</p>
+          </div>
+        </div>
+
+        <div class="t-item" data-animate>
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-head">
+              <img src="img/roblox.jpg" class="t-img" alt="">
+              <div>
+                <div class="t-title">Сегодня</div>
+                <div class="t-sub">Ирония + цель</div>
+              </div>
+            </div>
+            <p>Говорит, что “спустился ещё ниже”, но цель остаётся: стать богатым.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section" id="interests">
+      <div class="section-head" data-animate>
+        <h2>Интересы</h2>
+        <p>То, что реально цепляет.</p>
+      </div>
+
+      <div class="hobby-grid">
+        <div class="hobby-card" data-animate>
+          <img src="img/night.jpg" alt="">
+          <div class="hobby-text">
+            <h3>Атомные реакторы</h3>
+            <p>Интерес к устройству, принципам работы и тому, как энергия становится мощью.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card" data-animate>
+          <img src="img/roblox.jpg" alt="">
+          <div class="hobby-text">
+            <h3>Roblox-брейнроты</h3>
+            <p>Мемные моменты и “абсурд” из Roblox — это отдельный жанр настроения.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card" data-animate>
+          <img src="img/car.jpg" alt="">
+          <div class="hobby-text">
+            <h3>Речь и стиль</h3>
+            <p>Может говорить дипломатично, а может резко включить “уличный вайб”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEECH -->
+    <section class="section" id="speech">
+      <div class="section-head" data-animate>
+        <h2>Речь Радриго</h2>
+        <p class="muted">
+          Мемные “цитаты в стиле Стэтхэма” (шутки, не официальные цитаты).
+        </p>
+      </div>
+
+      <div class="speech-grid">
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/car.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про лес</div>
+              <div class="speech-sub">мем-режим</div>
+            </div>
+          </div>
+          <p class="speech-quote">«Если заблудился в лесу, иди домой.»</p>
+        </article>
+
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/night.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про сложный выбор</div>
+              <div class="speech-sub">без лишнего</div>
+            </div>
+          </div>
+          <p class="speech-quote">«В жизни всегда есть две дороги: одна — первая, а другая — вторая.»</p>
+        </article>
+
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/roblox.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про достижения</div>
+              <div class="speech-sub">брейнрот-версия</div>
+            </div>
+          </div>
+          <p class="speech-quote">«Из проведённых 64-х боёв у меня 64 победы. Все бои были с тенью.»</p>
+        </article>
+
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/car.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про то что как надо</div>
+              <div class="speech-sub">жёстко</div>
+            </div>
+          </div>
+          <p class="speech-quote">«Делай, как надо. Как не надо, не делай.»</p>
+        </article>
+
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/night.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про себя</div>
+              <div class="speech-sub">ирония</div>
+            </div>
+          </div>
+          <p class="speech-quote">«Не будьте эгоистами, в первую очередь думайте о себе!»</p>
+        </article>
+
+        <article class="speech-card" data-animate>
+          <div class="speech-top">
+            <img src="img/roblox.jpg" class="speech-ava" alt="">
+            <div>
+              <div class="speech-title">Про "жалко"</div>
+              <div class="speech-sub">легенда</div>
+            </div>
+          </div>
+          <p class="speech-quote">«Жалко… жалко у пчёлки в попке.»</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="section-head" data-animate>
+        <h2>Галерея</h2>
+        <p>Нажимай на фото — откроется просмотр.</p>
+      </div>
+
+      <div class="gallery">
+        <button class="g-item" data-full="img/car.jpg" data-animate>
+          <img src="img/car.jpg" alt="Радриго">
+          <span>Радриго</span>
+        </button>
+
+        <button class="g-item" data-full="img/bg.jpg" data-animate>
+          <img src="img/bg.jpg" alt="Радриго в прайме">
+          <span>Фон</span>
+        </button>
+
+        <button class="g-item" data-full="img/night.jpg" data-animate>
+          <img src="img/night.jpg" alt="Ночь">
+          <span>Ночь</span>
+        </button>
+
+        <button class="g-item" data-full="img/roblox.jpg" data-animate>
+          <img src="img/roblox.jpg" alt="Радриго в молодости">
+          <span>Roblox</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- GOAL -->
+    <section class="section" id="goal">
+      <div class="section-head" data-animate>
+        <h2>Главная цель</h2>
+        <p>Куда он идёт.</p>
+      </div>
+
+      <div class="goal" data-animate>
+        <div class="goal-card">
+          <h3>Цель Радриго</h3>
+          <p>Стать <b>богатым</b> и добиться успеха, не теряя характер.</p>
+          <div class="goal-row">
+            <img src="img/car.jpg" class="goal-ava" alt="">
+            <div>
+              <div class="goal-name">Радриго</div>
+              <div class="goal-sub">“дела важнее слов” так что көтіңді қыс. </div>
+            </div>
+          </div>
+
+          <div class="goal-actions">
+            <a class="btn primary" href="#home">Наверх</a>
+            <button class="btn" id="randomQuoteBtn">Случайная цитата</button>
+          </div>
+
+          <div class="random-box" id="randomBox" aria-live="polite"></div>
+        </div>
+
+        <div class="goal-side">
+          <div class="side-card">
+            <img src="img/night.jpg" alt="">
+            <p>“Тишина — тоже ответ. Просто не всем он нравится.”</p>
+          </div>
+          <div class="side-card">
+            <img src="img/roblox.jpg" alt="">
+            <p>“Иногда мем — это лучший способ пережить серьёзный день.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" data-animate>
+      <div>© <span id="year"></span> Rodrigo Bio</div>
+      <div class="footer-mini">
+        <img src="img/car.jpg" alt="">
+        <img src="img/night.jpg" alt="">
+        <img src="img/roblox.jpg" alt="">
+      </div>
+    </footer>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalClose"></div>
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <div class="modal-top">
+        <div class="modal-title" id="modalTitle">Просмотр фото</div>
+        <button class="modal-x" id="modalX" aria-label="Закрыть">✕</button>
+      </div>
+      <img id="modalImg" src="img/car.jpg" alt="Просмотр">
+      <div class="modal-hint">Esc — закрыть</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
